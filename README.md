@@ -118,9 +118,9 @@ Assets
 ├── events.html         # Events/announcements with filtering
 ├── contact.html        # Contact form with validation
 ├── Style/
- └── styles.css          # Comprehensive styling with animations
+|     └── styles.css          # Comprehensive styling with animations
 ├── Script/
- └── script.js           # All JavaScript functionality
+|    └── script.js           # All JavaScript functionality
 ├── README.md          # Project documentation
 └── images/            # Your images folder (create this)
     ├── faculty/       # 12 faculty photos (400x400px)

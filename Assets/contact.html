@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | College of Computer Studies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@300;400;500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-symbol">&lt;/&gt;</span>
+                <span class="brand-text">CCS</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="programs.html" class="nav-link">Programs</a></li>
+                <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-subtitle">Get in Touch with the College</p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form-section">
+                    <h2>Send us a Message</h2>
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name <span class="required">*</span></label>
+                                <input type="text" id="firstName" name="firstName" required>
+                                <span class="error-message"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName">Last Name <span class="required">*</span></label>
+                                <input type="text" id="lastName" name="lastName" required>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inquiryType">Inquiry Type <span class="required">*</span></label>
+                            <select id="inquiryType" name="inquiryType" required>
+                                <option value="">Select an option</option>
+                                <option value="admissions">Admissions Inquiry</option>
+                                <option value="programs">Program Information</option>
+                                <option value="faculty">Faculty Contact</option>
+                                <option value="research">Research Collaboration</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-section">
+                    <div class="info-card">
+                        <h3>📍 Address</h3>
+                        <p>College of Computer Studies<br>
+                        University Campus<br>
+                        Technology Building, 3rd Floor<br>
+                        Main City, Province 1000</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>📞 Phone</h3>
+                        <p>Main Office: +63 (2) 1234-5678<br>
+                        Admissions: +63 (2) 1234-5679<br>
+                        Fax: +63 (2) 1234-5680</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>✉️ Email</h3>
+                        <p>General: info@ccs.edu.ph<br>
+                        Admissions: admissions@ccs.edu.ph<br>
+                        Faculty: faculty@ccs.edu.ph</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>🕐 Office Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 5:00 PM<br>
+                        Saturday: 9:00 AM - 12:00 PM<br>
+                        Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">✓</div>
+            <h2>Message Sent Successfully!</h2>
+            <p>Thank you for contacting us. We'll get back to you soon.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>College of Computer Studies</h3>
+                    <p>Innovating Tomorrow's Technology Leaders</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>info@ccs.edu.ph</li>
+                        <li>+63 (2) 1234-5678</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 College of Computer Studies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Script/script.js"></script>
+</body>
+</html>

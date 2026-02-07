@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Programs | College of Computer Studies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@300;400;500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-symbol">&lt;/&gt;</span>
+                <span class="brand-text">CCS</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="programs.html" class="nav-link active">Programs</a></li>
+                <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">Academic Programs</h1>
+                <p class="page-subtitle">Discover Your Path in Technology</p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="programs-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="undergraduate">Undergraduate</button>
+                    <button class="tab-btn" data-tab="graduate">Graduate</button>
+                    <button class="tab-btn" data-tab="certificates">Certificates</button>
+                </div>
+                
+                <div class="tab-content">
+                    <!-- Undergraduate Programs -->
+                    <div id="undergraduate" class="tab-pane active">
+                        <div class="programs-grid">
+                            <div class="program-card">
+                                <div class="program-header">
+                                    <div class="program-icon">💻</div>
+                                    <h3>BS Computer Science</h3>
+                                </div>
+                                <p class="program-description">Comprehensive study of computing theory, algorithms, and software development.</p>
+                                <button class="accordion-toggle" onclick="toggleAccordion(this)">
+                                    <span>View Details</span>
+                                    <span class="toggle-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <h4>Program Highlights</h4>
+                                    <ul>
+                                        <li>Algorithm Design and Analysis</li>
+                                        <li>Software Engineering</li>
+                                        <li>Artificial Intelligence</li>
+                                        <li>Database Systems</li>
+                                        <li>Computer Networks</li>
+                                    </ul>
+                                    <p><strong>Duration:</strong> 4 years</p>
+                                    <p><strong>Total Units:</strong> 120 units</p>
+                                </div>
+                            </div>
+
+                            <div class="program-card">
+                                <div class="program-header">
+                                    <div class="program-icon">📊</div>
+                                    <h3>BS Information Technology</h3>
+                                </div>
+                                <p class="program-description">Focus on practical applications of technology in business and organizations.</p>
+                                <button class="accordion-toggle" onclick="toggleAccordion(this)">
+                                    <span>View Details</span>
+                                    <span class="toggle-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <h4>Program Highlights</h4>
+                                    <ul>
+                                        <li>Web Development</li>
+                                        <li>Mobile Application Development</li>
+                                        <li>IT Project Management</li>
+                                        <li>Systems Integration</li>
+                                        <li>Network Administration</li>
+                                    </ul>
+                                    <p><strong>Duration:</strong> 4 years</p>
+                                    <p><strong>Total Units:</strong> 120 units</p>
+                                </div>
+                            </div>
+
+                            <div class="program-card">
+                                <div class="program-header">
+                                    <div class="program-icon">🔒</div>
+                                    <h3>BS Cybersecurity</h3>
+                                </div>
+                                <p class="program-description">Specialized training in information security and cyber defense.</p>
+                                <button class="accordion-toggle" onclick="toggleAccordion(this)">
+                                    <span>View Details</span>
+                                    <span class="toggle-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <h4>Program Highlights</h4>
+                                    <ul>
+                                        <li>Network Security</li>
+                                        <li>Ethical Hacking</li>
+                                        <li>Cryptography</li>
+                                        <li>Security Operations</li>
+                                        <li>Digital Forensics</li>
+                                    </ul>
+                                    <p><strong>Duration:</strong> 4 years</p>
+                                    <p><strong>Total Units:</strong> 120 units</p>
+                                </div>
+                            </div>
+
+                            <div class="program-card">
+                                <div class="program-header">
+                                    <div class="program-icon">📈</div>
+                                    <h3>BS Data Science</h3>
+                                </div>
+                                <p class="program-description">Transform data into insights through statistics and machine learning.</p>
+                                <button class="accordion-toggle" onclick="toggleAccordion(this)">
+                                    <span>View Details</span>
+                                    <span class="toggle-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <h4>Program Highlights</h4>
+                                    <ul>
+                                        <li>Statistical Analysis</li>
+                                        <li>Machine Learning</li>
+                                        <li>Data Visualization</li>
+                                        <li>Big Data Technologies</li>
+                                        <li>Predictive Modeling</li>
+                                    </ul>
+                                    <p><strong>Duration:</strong> 4 years</p>
+                                    <p><strong>Total Units:</strong> 120 units</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Graduate Programs -->
+                    <div id="graduate" class="tab-pane">
+                        <div class="programs-grid">
+                            <div class="program-card">
+                                <div class="program-header">
+                                    <div class="program-icon">🎓</div>
+                                    <h3>MS Computer Science</h3>
+                                </div>
+                                <p class="program-description">Advanced study in computing with research focus.</p>
+                                <button class="accordion-toggle" onclick="toggleAccordion(this)">
+                                    <span>View Details</span>
+                                    <span class="toggle-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <h4>Specializations</h4>
+                                    <ul>
+                                        <li>Artificial Intelligence</li>
+                                        <li>Computer Vision</li>
+                                        <li>Distributed Systems</li>
+                                        <li>Theoretical Computer Science</li>
+                                    </ul>
+                                    <p><strong>Duration:</strong> 2 years</p>
+                                    <p><strong>Total Units:</strong> 36 units</p>
+                                </div>
+                            </div>
+
+                            <div class="program-card">
+                                <div class="program-header">
+                                    <div class="program-icon">🔬</div>
+                                    <h3>MS Data Science</h3>
+                                </div>
+                                <p class="program-description">Master the science of data analysis and interpretation.</p>
+                                <button class="accordion-toggle" onclick="toggleAccordion(this)">
+                                    <span>View Details</span>
+                                    <span class="toggle-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <h4>Specializations</h4>
+                                    <ul>
+                                        <li>Deep Learning</li>
+                                        <li>Business Analytics</li>
+                                        <li>Data Engineering</li>
+                                        <li>Natural Language Processing</li>
+                                    </ul>
+                                    <p><strong>Duration:</strong> 2 years</p>
+                                    <p><strong>Total Units:</strong> 36 units</p>
+                                </div>
+                            </div>
+
+                            <div class="program-card">
+                                <div class="program-header">
+                                    <div class="program-icon">📚</div>
+                                    <h3>PhD Computer Science</h3>
+                                </div>
+                                <p class="program-description">Doctoral research in advanced computing topics.</p>
+                                <button class="accordion-toggle" onclick="toggleAccordion(this)">
+                                    <span>View Details</span>
+                                    <span class="toggle-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <h4>Research Areas</h4>
+                                    <ul>
+                                        <li>Machine Learning & AI</li>
+                                        <li>Computer Security</li>
+                                        <li>Human-Computer Interaction</li>
+                                        <li>Software Engineering</li>
+                                    </ul>
+                                    <p><strong>Duration:</strong> 3-5 years</p>
+                                    <p><strong>Requirements:</strong> Dissertation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificate Programs -->
+                    <div id="certificates" class="tab-pane">
+                        <div class="programs-grid">
+                            <div class="program-card">
+                                <div class="program-header">
+                                    <div class="program-icon">🌐</div>
+                                    <h3>Web Development Certificate</h3>
+                                </div>
+                                <p class="program-description">Full-stack web development skills.</p>
+                                <button class="accordion-toggle" onclick="toggleAccordion(this)">
+                                    <span>View Details</span>
+                                    <span class="toggle-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <h4>Topics Covered</h4>
+                                    <ul>
+                                        <li>HTML, CSS, JavaScript</li>
+                                        <li>React & Node.js</li>
+                                        <li>Database Design</li>
+                                        <li>API Development</li>
+                                    </ul>
+                                    <p><strong>Duration:</strong> 6 months</p>
+                                </div>
+                            </div>
+
+                            <div class="program-card">
+                                <div class="program-header">
+                                    <div class="program-icon">☁️</div>
+                                    <h3>Cloud Computing Certificate</h3>
+                                </div>
+                                <p class="program-description">Master cloud platforms and services.</p>
+                                <button class="accordion-toggle" onclick="toggleAccordion(this)">
+                                    <span>View Details</span>
+                                    <span class="toggle-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <h4>Topics Covered</h4>
+                                    <ul>
+                                        <li>AWS & Azure Fundamentals</li>
+                                        <li>Cloud Architecture</li>
+                                        <li>DevOps Practices</li>
+                                        <li>Container Technologies</li>
+                                    </ul>
+                                    <p><strong>Duration:</strong> 6 months</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>College of Computer Studies</h3>
+                    <p>Innovating Tomorrow's Technology Leaders</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>info@ccs.edu.ph</li>
+                        <li>+63 (2) 1234-5678</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 College of Computer Studies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Script/script.js"></script>
+</body>
+</html>

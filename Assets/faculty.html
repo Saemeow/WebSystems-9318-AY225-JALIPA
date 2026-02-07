@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Directory | College of Computer Studies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@300;400;500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-symbol">&lt;/&gt;</span>
+                <span class="brand-text">CCS</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="programs.html" class="nav-link">Programs</a></li>
+                <li><a href="faculty.html" class="nav-link active">Faculty</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">Faculty Directory</h1>
+                <p class="page-subtitle">Meet Our Expert Educators</p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <!-- Search and Filter Controls -->
+            <div class="faculty-controls">
+                <div class="search-box">
+                    <input type="text" id="facultySearch" placeholder="Search by name, expertise, or department..." class="search-input">
+                    <span class="search-icon">🔍</span>
+                </div>
+                
+                <div class="filter-controls">
+                    <select id="departmentFilter" class="filter-select">
+                        <option value="">All Departments</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Information Technology">Information Technology</option>
+                        <option value="Cybersecurity">Cybersecurity</option>
+                        <option value="Data Science">Data Science</option>
+                    </select>
+                    
+                    <select id="rankFilter" class="filter-select">
+                        <option value="">All Ranks</option>
+                        <option value="Professor">Professor</option>
+                        <option value="Associate Professor">Associate Professor</option>
+                        <option value="Assistant Professor">Assistant Professor</option>
+                        <option value="Lecturer">Lecturer</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="facultyCount" class="results-count"></div>
+
+            <!-- Faculty Grid -->
+            <div id="facultyGrid" class="faculty-grid">
+                <!-- Faculty cards will be dynamically generated here -->
+            </div>
+
+            <div id="noResults" class="no-results" style="display: none;">
+                <p>No faculty members found matching your criteria.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>College of Computer Studies</h3>
+                    <p>Innovating Tomorrow's Technology Leaders</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>info@ccs.edu.ph</li>
+                        <li>+63 (2) 1234-5678</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 College of Computer Studies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Script/script.js"></script>
+</body>
+</html>

@@ -354,7 +354,7 @@ This project demonstrates:
 ## 🔗 Live Demo
 
 After deployment, your site will be accessible at:
-`https://YOUR-USERNAME.github.io/REPOSITORY-NAME/`
+`(https://github.com/Saemeow/WebSystems-9318-AY225-JALIPA.git)`
 
 ## 👨‍💻 Author
 

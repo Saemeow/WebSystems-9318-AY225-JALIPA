@@ -182,13 +182,13 @@ Quick setup:
    ```bash
    git init
    git add .
-   git commit -m "Initial commit: CCS Academic Website"
+   git commit -m "Done Exam"
    ```
 
 2. **Push to GitHub**
    ```bash
    git branch -M main
-   git remote add origin https://github.com/YOUR-USERNAME/ccs-website.git
+   git remote add origin https://github.com/Saemeow/WebSystems-9318-AY225-JALIPA.git
    git push -u origin main
    ```
 
@@ -197,7 +197,7 @@ Quick setup:
    - Navigate to Pages section
    - Select "main" branch as source
    - Click Save
-   - Your site will be live at: `https://YOUR-USERNAME.github.io/ccs-website/`
+   - Your site will be live at: `https://github.com/Saemeow/WebSystems-9318-AY225-JALIPA.git`
 
 4. **Make Repository Public** (Required for assignment)
    - Go to repository Settings
